@@ -1,0 +1,25 @@
+
+* Question we're Answering
+** How many questions are asked on IRC from:
+*** #nodejs
+*** #ruby
+*** #rubyonrails
+
+* Front End
+** Program that listens onto freenode and records information from channels
+*** Talks to an intermediary proxy which sends info off to cluster
+** Multiplexed? One-way?
+
+* Backend
+** Spark/Scala
+** AWS
+** Kafka
+   
+* TODO Questions [0/7]
+** TODO How do I setup Spark?
+** TODO How is Spark setup on AWS?
+** TODO How is Spark setup locally
+** TODO How do we cluster spark?
+** TODO How do we run spark map/reduce?
+** TODO How do we run streaming operations through spark?
+** TODO How do we stream information from IRC to Spark and map/reduce it?
