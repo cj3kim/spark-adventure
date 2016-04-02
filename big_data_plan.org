@@ -84,6 +84,7 @@ To get started, visit the Kubernetes home page.
 
  
 ** Store Files
+When you upload files to Google Cloud Storage, they are backed up to multiple physical locations. This ensures your files are protected even if a data center goes down and makes it possible for you—from anywhere in the world—to have fast access to them.
 *** gsutil cp -r /sample-files gs://interactive-tutorial-xrq86s-bucket [/]
 **** What does gsutil do?
 **** Why do we pass cp to gsutil as an argument?
@@ -111,3 +112,8 @@ cj3kim@my-instance:~$ man gsutil
 * Links   
 [[http://spark.apache.org/docs/latest/quick-start.html][Quick Start]]
 [[http://spark.apache.org/docs/latest/programming-guide.html][Spark Programming Guide]]
+
+
+
+* Slack Notes
+[[https://slack.com/apps][App Market]]
