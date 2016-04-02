@@ -77,12 +77,15 @@ Kubernetes is optimized for Google Cloud Platform, but can run on any physical o
 
 To get started, visit the Kubernetes home page.
 
-* Kubernetes Guide
-** View your web server in a browser
-*** gcloud compute instances list my-instance
-**** Sample Ouput
- NAME	ZONE	MACHINE_TYPE	PREEMPTIBLE	INTERNAL_IP	EXTERNAL_IP	STATUS
- my-instance	us-central1-b	n1-standard-1		10.240.0.2	198.51.100.0	RUNNING
+* Google Cloud Guide
+[[https://interactive-tutorial.appspot.com/][10 Minute Interactive Tutorial]]
+[[https://cloud.google.com/sdk/gcloud/?_ga=1.259953353.231660072.1459633923][GCloud API]]
+** Example 10 min tutorial
+*** View your web server in a browser
+**** gcloud compute instances list my-instance
+***** Sample Ouput
+  NAME	ZONE	MACHINE_TYPE	PREEMPTIBLE	INTERNAL_IP	EXTERNAL_IP	STATUS
+  my-instance	us-central1-b	n1-standard-1		10.240.0.2	198.51.100.0	RUNNING
 
 
 
@@ -92,32 +95,42 @@ To get started, visit the Kubernetes home page.
 
 
 
- 
-** Store Files
-When you upload files to Google Cloud Storage, they are backed up to multiple physical locations. This ensures your files are protected even if a data center goes down and makes it possible for you—from anywhere in the world—to have fast access to them.
-*** gsutil cp -r /sample-files gs://interactive-tutorial-xrq86s-bucket [/]
-**** What does gsutil do?
-**** Why do we pass cp to gsutil as an argument?
-**** What does gs:// mean? Seems releated to a bucket.
-**** Output
+*** Store Files
+ When you upload files to Google Cloud Storage, they are backed up to multiple physical locations. This ensures your files are protected even if a data center goes down and makes it possible for you—from anywhere in the world—to have fast access to them.
 
-cj3kim@my-instance:~$ gsutil cp -r /sample-files gs://interactive-tutorial-xrq86s-bucket
+**** gsutil cp -r /sample-files gs://interactive-tutorial-xrq86s-bucket [/]
+***** What does gsutil do?
+***** Why do we pass cp to gsutil as an argument?
+***** What does gs:// mean? Seems releated to a bucket.
+***** Output
 
-Copying file:///sample-files/shakespeare.csv [Content-Type=text/csv]...
-Uploading   ...orial-xrq86s-bucket/sample-files/shakespeare.csv: 4.41 MiB/4.41 MiB      
-Copying file:///sample-files/sample.sql [Content-Type=application/x-sql]...
+ cj3kim@my-instance:~$ gsutil cp -r /sample-files gs://interactive-tutorial-xrq86s-bucket
 
-Uploading   ...e-tutorial-xrq86s-bucket/sample-files/sample.sql: 7.63 KiB/7.63 KiB    
-Copying file:///sample-files/public/photo.jpg [Content-Type=image/jpeg]...
-Uploading   ...rial-xrq86s-bucket/sample-files/public/photo.jpg: 99.73 KiB/99.73 KiB    
+ Copying file:///sample-files/shakespeare.csv [Content-Type=text/csv]...
+ Uploading   ...orial-xrq86s-bucket/sample-files/shakespeare.csv: 4.41 MiB/4.41 MiB      
+ Copying file:///sample-files/sample.sql [Content-Type=application/x-sql]...
 
-cj3kim@my-instance:~$ man gsutil
+ Uploading   ...e-tutorial-xrq86s-bucket/sample-files/sample.sql: 7.63 KiB/7.63 KiB    
+ Copying file:///sample-files/public/photo.jpg [Content-Type=image/jpeg]...
+ Uploading   ...rial-xrq86s-bucket/sample-files/public/photo.jpg: 99.73 KiB/99.73 KiB    
+
+ cj3kim@my-instance:~$ man gsutil
+*** Make some files public
+**** One Command
+ gsutil acl ch -r -u AllUsers:READ \ gs://interactive-tutorial-xrq86s-bucket/sample-files/public
+
+*** View public files
+ Test that the file is public by clicking the following link and viewing the page in your browser. 
+ http://storage.googleapis.com/interactive-tutorial-xrq86s-bucket/sample-files/public/phot
+https://cloud.google.com/sdk/gcloud/?_ga=1.259953353.231660072.1459633923
 
 
 * TODO Logistal Tasks [1/3]
 ** TODO Setup Amazon EC2 Account
 ** TODO Setup Spark locally 
 ** DONE Setup Slack 
+
+
 
 * Links   
 [[http://spark.apache.org/docs/latest/quick-start.html][Quick Start]]
