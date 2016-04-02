@@ -58,6 +58,61 @@ Where
 Amazon Elastic Compute Cloud (EC2) forms a central part of Amazon.com's cloud-computing platform, Amazon Web Services (AWS), by allowing users to rent virtual computers on which to run their own computer applications.
 
 
+* Docker  
+Docker containers wrap up a piece of software in a complete filesystem that contains everything it needs to run: code, runtime, system tools, system libraries – anything you can install on a server. This guarantees that it will always run the same, regardless of the environment it is running in.
+
+* Amazon EC2 
+** Resources
+[[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html][Getting Started]]
+
+
+* Google Cloud Platform
+  
+* Kubernetes
+Kubernetes is an open source container cluster manager. It schedules any number of container replicas across a group of node instances. A master instance exposes the Kubernetes API, through which tasks are defined. Kubernetes spawns containers on nodes to handle the defined tasks.
+
+The number and type of containers can be dynamically modified according to need. An agent (a kubelet) on each node instance monitors containers and restarts them if necessary.
+
+Kubernetes is optimized for Google Cloud Platform, but can run on any physical or virtual machine.
+
+To get started, visit the Kubernetes home page.
+
+* Kubernetes Guide
+** View your web server in a browser
+*** gcloud compute instances list my-instance
+**** Sample Ouput
+ NAME	ZONE	MACHINE_TYPE	PREEMPTIBLE	INTERNAL_IP	EXTERNAL_IP	STATUS
+ my-instance	us-central1-b	n1-standard-1		10.240.0.2	198.51.100.0	RUNNING
+
+
+
+        
+
+        
+
+
+
+ 
+** Store Files
+When you upload files to Google Cloud Storage, they are backed up to multiple physical locations. This ensures your files are protected even if a data center goes down and makes it possible for you—from anywhere in the world—to have fast access to them.
+*** gsutil cp -r /sample-files gs://interactive-tutorial-xrq86s-bucket [/]
+**** What does gsutil do?
+**** Why do we pass cp to gsutil as an argument?
+**** What does gs:// mean? Seems releated to a bucket.
+**** Output
+
+cj3kim@my-instance:~$ gsutil cp -r /sample-files gs://interactive-tutorial-xrq86s-bucket
+
+Copying file:///sample-files/shakespeare.csv [Content-Type=text/csv]...
+Uploading   ...orial-xrq86s-bucket/sample-files/shakespeare.csv: 4.41 MiB/4.41 MiB      
+Copying file:///sample-files/sample.sql [Content-Type=application/x-sql]...
+
+Uploading   ...e-tutorial-xrq86s-bucket/sample-files/sample.sql: 7.63 KiB/7.63 KiB    
+Copying file:///sample-files/public/photo.jpg [Content-Type=image/jpeg]...
+Uploading   ...rial-xrq86s-bucket/sample-files/public/photo.jpg: 99.73 KiB/99.73 KiB    
+
+cj3kim@my-instance:~$ man gsutil
+
 
 * TODO Logistal Tasks [1/3]
 ** TODO Setup Amazon EC2 Account
@@ -67,3 +122,8 @@ Amazon Elastic Compute Cloud (EC2) forms a central part of Amazon.com's cloud-co
 * Links   
 [[http://spark.apache.org/docs/latest/quick-start.html][Quick Start]]
 [[http://spark.apache.org/docs/latest/programming-guide.html][Spark Programming Guide]]
+
+
+
+* Slack Notes
+[[https://slack.com/apps][App Market]]
