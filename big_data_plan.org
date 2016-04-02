@@ -18,6 +18,16 @@
 
 * TODO Questions [2/9]
 ** TODO How do we setup Spark on a Mac?
+- ensure Java is installed
+- go to the Downloads page: http://spark.apache.org/downloads.html
+- choose the latest version
+- choose "Pre-built for Hadoop 2.6 and later" as the package type
+- use "select apache mirror"
+- click the link below "select apache mirror" to go to the mirror page
+- use the suggested mirror to download it
+- run tar xzf <filename> to extract it
+- cd into the directory and run bin/spark-shell
+
 ** TODO How do I setup Spark?
 ** DONE How is Spark setup on a Cluster/AWS?
 Saturday - 04/02/2016 - 02:28 PM PDT There's a spark EC2 link
