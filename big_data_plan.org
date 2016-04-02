@@ -15,11 +15,37 @@
 ** AWS
 ** Kafka
    
-* TODO Questions [0/7]
+
+* TODO Questions [1/8]
+** TODO How do we setup Spark on a Mac?
 ** TODO How do I setup Spark?
-** TODO How is Spark setup on AWS?
+** DONE How is Spark setup on a Cluster/AWS?
+Saturday - 04/02/2016 - 02:28 PM PDT There's a spark EC2 link
+
+*** Launching on a Cluster
+**** Description
+The Spark cluster mode overview explains the key concepts in running on a cluster. Spark can run both by itself, or over several existing cluster managers. It currently provides several options for deployment:
+
+Amazon EC2: our EC2 scripts let you launch a cluster in about 5 minutes
+Standalone Deploy Mode: simplest way to deploy Spark on a private cluster
+Apache Mesos
+Hadoop YARN
+Where
+
+**** Resources/Links
+[[http://spark.apache.org/docs/latest/cluster-overview.html][Cluster Overview]]
+[[http://spark.apache.org/docs/latest/ec2-scripts.html][Spark EC2 Script]]
+[[http://spark.apache.org/docs/latest/spark-standalone.html][Spark Standalone Mode]]
+[[http://spark.apache.org/docs/latest/running-on-yarn.html][Running Spark on Yarn]]
+
+
 ** TODO How is Spark setup locally
 ** TODO How do we cluster spark?
 ** TODO How do we run spark map/reduce?
 ** TODO How do we run streaming operations through spark?
 ** TODO How do we stream information from IRC to Spark and map/reduce it?
+   
+   
+* Links   
+[[http://spark.apache.org/docs/latest/quick-start.html][Quick Start]]
+[[http://spark.apache.org/docs/latest/programming-guide.html][Spark Programming Guide]]
