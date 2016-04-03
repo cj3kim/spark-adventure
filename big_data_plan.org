@@ -69,9 +69,7 @@ Docker containers wrap up a piece of software in a complete filesystem that cont
 ** Resources
 [[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html][Getting Started]]
 
-
 * Google Cloud Platform
-  
 * Kubernetes
 Kubernetes is an open source container cluster manager. It schedules any number of container replicas across a group of node instances. A master instance exposes the Kubernetes API, through which tasks are defined. Kubernetes spawns containers on nodes to handle the defined tasks.
 
@@ -80,6 +78,47 @@ The number and type of containers can be dynamically modified according to need.
 Kubernetes is optimized for Google Cloud Platform, but can run on any physical or virtual machine.
 
 To get started, visit the Kubernetes home page.
+
+** Kubernetes Spark Example
+[[https://docs.docker.com/engine/installation/mac/][docker mac]]   
+[[https://cloud.google.com/sdk/gcloud/reference/][gcloud reference]] 
+[[https://cloud.google.com/sdk/gcloud/][gcloud tool guide]]  
+[[http://blog.arungupta.me/key-concepts-kubernetes/][kubernetes concepts]]
+
+
+
+*** Commands
+**** gcloud container clusters get-credentials spark
+**** kubectl logs spark-master-controller-lg8u3
+16/04/03 01:31:53 INFO Master: Registered signal handlers for [TERM, HUP, INT]
+16/04/03 01:31:53 INFO SecurityManager: Changing view acls to: root
+16/04/03 01:31:53 INFO SecurityManager: Changing modify acls to: root
+16/04/03 01:31:53 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(root); users with modify permissions: Set(root)
+16/04/03 01:31:54 INFO Slf4jLogger: Slf4jLogger started
+16/04/03 01:31:54 INFO Remoting: Starting remoting
+16/04/03 01:31:54 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkMaster@spark-master:7077]
+16/04/03 01:31:55 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+16/04/03 01:31:55 INFO Master: Starting Spark master at spark://spark-master:7077
+16/04/03 01:31:55 INFO Master: Running Spark version 1.5.2
+16/04/03 01:31:55 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+16/04/03 01:31:55 INFO MasterWebUI: Started MasterWebUI at http://10.0.1.4:8080
+16/04/03 01:31:55 INFO Utils: Successfully started service on port 6066.
+16/04/03 01:31:55 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
+16/04/03 01:31:55 INFO Master: I have been elected leader! New state: ALIVE
+
+**** kubectl exec zeppelin-controller-3yr67 --it pyspark
+
+*** Step 1
+    
+**** Prereqs
+     
+     1. Have a kubernetes cluster installed and running
+     2. Have the kubectl command line tool installed
+     3. That a spark-master service which spins up will be automatically discoverable by your kube DNS impl, as 'spark-master'
+
+
+     
+
 
 * Google Cloud Guide
 [[https://interactive-tutorial.appspot.com/][10 Minute Interactive Tutorial]]
@@ -128,7 +167,6 @@ To get started, visit the Kubernetes home page.
  http://storage.googleapis.com/interactive-tutorial-xrq86s-bucket/sample-files/public/phot
 https://cloud.google.com/sdk/gcloud/?_ga=1.259953353.231660072.1459633923
 
-
 * TODO Logistal Tasks [1/3]
 ** TODO Setup Amazon EC2 Account
 ** TODO Setup Spark locally 
@@ -140,7 +178,16 @@ https://cloud.google.com/sdk/gcloud/?_ga=1.259953353.231660072.1459633923
 [[http://spark.apache.org/docs/latest/quick-start.html][Quick Start]]
 [[http://spark.apache.org/docs/latest/programming-guide.html][Spark Programming Guide]]
 
-
-
 * Slack Notes
 [[https://slack.com/apps][App Market]]
+* Things we need to study tonight [0/9]
+** TODO Docker
+** TODO Kubernetes
+** TODO Spark 
+** TODO gcloud
+** TODO gsutil
+** TODO the scheme: gs://
+** TODO dataproc
+
+** TODO How does gcloud holistically work with all the other tooling and interfaces?
+** TODO How to SSH into a project
