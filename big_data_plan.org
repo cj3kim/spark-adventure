@@ -177,17 +177,23 @@ https://cloud.google.com/sdk/gcloud/?_ga=1.259953353.231660072.1459633923
 * Links   
 [[http://spark.apache.org/docs/latest/quick-start.html][Quick Start]]
 [[http://spark.apache.org/docs/latest/programming-guide.html][Spark Programming Guide]]
-
+[[https://thinkbiganalytics.com/leading_big_data_technologies/ingestion-and-streaming-with-storm-kafka-flume/][nice-comparisons]]
 * Slack Notes
 [[https://slack.com/apps][App Market]]
-* Things we need to study tonight [0/9]
-** TODO Docker
+
+* Things we need to study tonight [1/9]
+** DONE Docker
+[[https://docs.docker.com/engine/userguide/][docker user guide]]
+[[https://docs.docker.com/engine/userguide/containers/dockerimages/][docker images]]
+[[https://nodejs.org/en/docs/guides/nodejs-docker-webapp/][docking nodejs]]
+
 ** TODO Kubernetes
 ** TODO Spark 
 ** TODO gcloud
 ** TODO gsutil
 ** TODO the scheme: gs://
 ** TODO dataproc
-
 ** TODO How does gcloud holistically work with all the other tooling and interfaces?
 ** TODO How to SSH into a project
+
+   
