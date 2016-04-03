@@ -1,0 +1,9 @@
+
+[[https://www.quora.com/Is-Scala-a-better-choice-than-Python-for-Apache-Spark][Scala or Python?]]
+[[http://spark.apache.org/streaming/][Spark Streaming]]
+[[http://spark.apache.org/docs/latest/programming-guide.html][Spark Programming Guide]]
+
+* Resilient Distributed Datasets
+  
+
+
