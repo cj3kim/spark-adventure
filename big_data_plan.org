@@ -16,10 +16,10 @@
 ** Kafka
    
 
-* TODO Questions [2/9]
-** TODO How do we setup Spark on a Mac?
-- ensure Java is installed
-- go to the Downloads page: http://spark.apache.org/downloads.html
+* TODO Questions [3/10]
+** DONE How do we setup Spark on a Mac?
+- ensure Java is installed [[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html][Install Java]]
+- go to the Downloads page: http://spark.apache.org/downloads.html || brew install apache-spark
 - choose the latest version
 - choose "Pre-built for Hadoop 2.6 and later" as the package type
 - use "select apache mirror"
@@ -27,6 +27,10 @@
 - use the suggested mirror to download it
 - run tar xzf <filename> to extract it
 - cd into the directory and run bin/spark-shell
+** TODO How to run spark in Python or Scala
+
+pyspark     - python console
+spark-shell - scala console
 
 ** TODO How do I setup Spark?
 ** DONE How is Spark setup on a Cluster/AWS?
