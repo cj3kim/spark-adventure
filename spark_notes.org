@@ -5,5 +5,53 @@
 
 * Resilient Distributed Datasets
   
+Spark revolves around the concept of a resilient distributed dataset (RDD), which is a fault-tolerant collection of elements that can be operated on in parallel. There are two ways to create RDDs: parallelizing an existing collection in your driver program, or referencing a dataset in an external storage system, such as a shared filesystem, HDFS, HBase, or any data source offering a Hadoop InputFormat.
+
+* Spark Methods
+
+** Spark Parellize
+
+Parallelized collections are created by calling SparkContext’s parallelize method on an existing iterable or collection in your driver program. The elements of the collection are copied to form a distributed dataset that can be operated on in parallel. For example, here is how to create a parallelized collection holding the numbers 1 to 5:
 
 
+*** Python Example
+ data = [1, 2, 3, 4, 5]
+ distData = sc.parallelize(data)
+ 
+*** Partitioning
+
+One important parameter for parallel collections is the number of partitions to cut the dataset into. Spark will run one task for each partition of the cluster. Typically you want 2-4 partitions for each CPU in your cluster. Normally, Spark tries to set the number of partitions automatically based on your cluster. However, you can also set it manually by passing it as a second parameter to parallelize (e.g. sc.parallelize(data, 10)). Note: some places in the code use the term slices (a synonym for partitions) to maintain backward compatibility.
+
+
+* External Datasets
+
+PySpark can create distributed datasets from any storage source supported by Hadoop, including your local file system, HDFS, Cassandra, HBase, Amazon S3, etc. Spark supports text files, SequenceFiles, and any other Hadoop InputFormat.
+
+* Basics
+
+lines = sc.textFile("data.txt")
+lineLengths = lines.map(lambda s: len(s))
+totalLength = lineLengths.reduce(lambda a, b: a + b)
+
+** Sparks automatically breaks the down the computation into tasks to run on separate machines
+** Driver Node
+** Executor Node
+** Spark Actions
+
+* Accumulators solve the problem of accumulating reductions
+Accumulators in Spark are used specifically to provide a mechanism for safely updating a variable when execution is split up across worker nodes in a cluster. The Accumulators section of this guide discusses these in more detail.
+
+** TODO Look into Persist
+
+* Spark Streaming
+** Key Selling Points
+*** Extension of teh Spark API
+*** Data can be ingested from many sources
+*** Processed data can be pushed out to file systems, databases, and live dashboards.
+*** You can apply machine learning and graph processing algorithms on data streams.
+** Discretized Stream 
+
+aka DStream. It represents a continuous streams of data.
+*** Internally represented as a sequence of RDDs.
+** We ca write Spark Streaming programs in Python
+** Few APIs are different or not available in Python
