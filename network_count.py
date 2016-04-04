@@ -44,7 +44,6 @@ class HashAccumParam(AccumulatorParam):
             v1[v2] = 1;
         return v1
 
-
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: network_wordcount.py <hostname> <port>", file=sys.stderr)
@@ -57,6 +56,10 @@ if __name__ == "__main__":
 
     lines = ssc.socketTextStream(sys.argv[1], int(sys.argv[2]))
     words = lines.flatMap(lambda line: line.split(" "))
+
+
+    print("words", words)
+    print(dir(words))
     counts = words.map(lambda word: (word, 1))\
                   .reduceByKey(lambda a, b: a+b)
 
