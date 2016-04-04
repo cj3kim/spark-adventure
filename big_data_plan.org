@@ -16,7 +16,19 @@
 ** Kafka
    
 
-* TODO Questions [3/10]
+* TODO Questions [7/10]
+** TODO How do we cluster spark?
+** TODO How do we run streaming operations through spark?
+
+** TODO How do we stream information from IRC to Spark and map/reduce it?
+** DONE How to run spark in Python or Scala
+
+pyspark     - python console
+spark-shell - scala console
+
+** DONE How do we run spark map/reduce?
+** DONE How do I setup Spark?
+** DONE How is Spark setup locally
 ** DONE How do we setup Spark on a Mac?
 - ensure Java is installed [[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html][Install Java]]
 - go to the Downloads page: http://spark.apache.org/downloads.html || brew install apache-spark
@@ -27,12 +39,6 @@
 - use the suggested mirror to download it
 - run tar xzf <filename> to extract it
 - cd into the directory and run bin/spark-shell
-** TODO How to run spark in Python or Scala
-
-pyspark     - python console
-spark-shell - scala console
-
-** TODO How do I setup Spark?
 ** DONE How is Spark setup on a Cluster/AWS?
 Saturday - 04/02/2016 - 02:28 PM PDT There's a spark EC2 link
 
@@ -52,12 +58,6 @@ Where
 [[http://spark.apache.org/docs/latest/spark-standalone.html][Spark Standalone Mode]]
 [[http://spark.apache.org/docs/latest/running-on-yarn.html][Running Spark on Yarn]]
 
-** TODO How is Spark setup locally
-** TODO How do we cluster spark?
-** TODO How do we run spark map/reduce?
-** TODO How do we run streaming operations through spark?
-
-** TODO How do we stream information from IRC to Spark and map/reduce it?
 ** DONE What is Amazon EC2?
 Amazon Elastic Compute Cloud (EC2) forms a central part of Amazon.com's cloud-computing platform, Amazon Web Services (AWS), by allowing users to rent virtual computers on which to run their own computer applications.
 
