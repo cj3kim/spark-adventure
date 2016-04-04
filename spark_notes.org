@@ -43,6 +43,11 @@ Accumulators in Spark are used specifically to provide a mechanism for safely up
 
 ** TODO Look into Persist
 
+* words <pyspark.streaming.dstream.TransformedDStream object at 0x10f1b0310>
+
+['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_jdstream', '_jdstream_val', '_jrdd_deserializer', '_jtime', '_sc', '_slideDuration', '_ssc', '_validate_window_param', 'cache', 'checkpoint', 'cogroup', 'combineByKey', 'context', 'count', 'countByValue', 'countByValueAndWindow', 'countByWindow', 'filter', 'flatMap', 'flatMapValues', 'foreachRDD', 'fullOuterJoin', 'func', 'glom', 'groupByKey', 'groupByKeyAndWindow', 'is_cached', 'is_checkpointed', 'join', 'leftOuterJoin', 'map', 'mapPartitions', 'mapPartitionsWithIndex', 'mapValues', 'partitionBy', 'persist', 'pprint', 'prev', 'reduce', 'reduceByKey', 'reduceByKeyAndWindow', 'reduceByWindow', 'repartition', 'rightOuterJoin', 'saveAsTextFiles', 'slice', 'transform', 'transformWith', 'union', 'updateStateByKey', 'window']
+
+
 * Spark Streaming
 ** Key Selling Points
 *** Extension of teh Spark API
@@ -55,3 +60,16 @@ aka DStream. It represents a continuous streams of data.
 *** Internally represented as a sequence of RDDs.
 ** We ca write Spark Streaming programs in Python
 ** Few APIs are different or not available in Python
+
+ from pyspark import AccumulatorParam
+
+ class HashAccumParam(AccumulatorParam):
+     def zero(self, initalValue):
+         return {};
+
+     def addInPlace(self, v1, v2):
+         if v2 in v1:
+             v1[v2] += 1;
+         else:
+             v1[v2] = 0;
+         return v1
