@@ -13,12 +13,10 @@ module.exports = {
         nick: "BabyBartlett",
         channels: [
             "#express",
-            "#java",
             "#python",
             "#javascript",
             "#haskell",
             "#Node.js",
-            "#c",
             "#jobs",
             "#emacs"
         ]

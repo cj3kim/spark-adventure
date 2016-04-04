@@ -16,14 +16,10 @@ var client = new irc.Client(ircServer, ircNick, { channels: ircChannels });
 var outputFile = fs.createWriteStream(filePath, config.writeOptions);
 
 client.addListener("message", function (from, channel, message) {
-    outputFile.write(channel + " - " + from + " - " + message + "\n");
+    outputFile.write(channel + " :--: " + from + " :--: " + message + "\n");
 });
 
-/*client.addListener("registered", function (message) {*/
-  //console.log("registerd", message);
-//});
-
-//client.addListener('error', function(message) {
-      //console.log('error: ', message);
-//});
+client.addListener('error', function(message) {
+      console.log('error: ', message);
+});
 

@@ -1,0 +1,89 @@
+##javascript :--: Potasmic :--: You have a Node package for that?
+##javascript :--: _3by8 :--: I'm going to grab some food.
+#emacs :--: twb :--: technomancy: well *I* do it
+##javascript :--: jaziz :--: _3by8, Anytime you need some help though, look it up or get on an IRC channel. Really helpful stuff
+#Node.js :--: buddyp450 :--: Having difficulty understanding my CORS issue... attempting to leverage a publicly available JSON api but doing an http.get request on the resource doesn't pass preflight access control checks?
+#haskell :--: nitrix :--: bottl: It works on type classes too, `:i Foldable`, if you're curious.
+#Node.js :--: buddyp450 :--: I'm confused why I don't just get the raw content back as I would from doing the GET request in postman or some other fiddling tool.
+#haskell :--: nitrix :--: It even gives a list of instances at the bottom.
+#haskell :--: bottl :--: right,i have tried it under ghci
+#emacs :--: twb :--: "The use of the prefix "grand-" dates from the early 13th century, from the Anglo-French graund. The term was used as a translation of Latin magnus.^[9]"
+#haskell :--: bottl :--: very cool
+##javascript :--: jaziz :--: tcsc, Honestly, the biggest reason why I'm reading it is because I wanna get into a cool company for an internship next year
+##javascript :--: jaziz :--: tcsc, And interviews are pretty much algorithms, I've heard
+#emacs :--: twb :--: In Old English, you'd just say "sixth father" instead of "great great great great grandfather"
+##javascript :--: tcsc :--: no clue. never did internships
+##javascript :--: tcsc :--: never had straight algorithm questions for interviews but i have heard of them
+#emacs :--: technomancy :--: that's way better; we should bring that back
+#emacs :--: twb :--: https://en.wikipedia.org/wiki/Grannygate
+##javascript :--: jaziz :--: hm yeah
+#haskell :--: hjulle :--: It actually works on any definition. `:i fold` will show that it is defined as part of the typeclass Foldable.
+##javascript :--: jaziz :--: google and facebook and stuff
+##javascript :--: jaziz :--: Actually those two are the goal
+##javascript :--: jaziz :--: I'd be really pleased with myself if I could pull one off
+##javascript :--: jaziz :--: But most likely not haha
+##javascript :--: tcsc :--: i work at mozilla now and they just asked me to implement things. no specific algorithms.
+##javascript :--: jaziz :--: mozilla has paid workers?
+##javascript :--: tcsc :--: tons
+##javascript :--: tcsc :--: i'd hope its the same for other big tech companies
+##javascript :--: jaziz :--: oh haha
+##javascript :--: jaziz :--: I thought they were all open source
+##javascript :--: tcsc :--: they are
+#emacs :--: e1f_ :--: Looks like the Miami herald was one of the news papers who worked on the leaks. It's reporting people who bought condos via offshore companies
+##javascript :--: jaziz :--: Then I guess I don't know what open source is
+##javascript :--: tcsc :--: it doesn't sound like you do
+##javascript :--: tcsc :--: :p
+##javascript :--: jaziz :--: haha
+##javascript :--: jaziz :--: enlighten me?
+#emacs :--: twb :--: capitalists gonna capital
+##javascript :--: tcsc :--: the source is available. it doesn't mean they can't make money off of it
+##javascript :--: jaziz :--: Hm.
+#emacs :--: bpalmer :--: I want an offshore condo. Preferably on the back of a giant turtle.
+##javascript :--: jaziz :--: How do they do that?
+##javascript :--: tcsc :--: mozilla makes a lot of money based on what search engine they put as default, for exmaple
+#emacs :--: mrm :--: twb: It'd be hard to discuss having two fathers in old english I suppose.
+##javascript :--: jaziz :--: "they" being computer owners?
+##javascript :--: tcsc :--: they being mozilla
+##javascript :--: jaziz :--: ohhh lol
+##javascript :--: jaziz :--: I thought you said browser
+##javascript :--: tcsc :--: or the author of the open source software
+##javascript :--: jaziz :--: yeah
+#emacs :--: e1f_ :--: http://www.miamiherald.com/news/business/real-estate-news/article69248462.html
+#emacs :--: rudybot :--: http://teensy.info/zaCLdW0FD1
+##javascript :--: jaziz :--: that makes sense now haha
+##javascript :--: jaziz :--: that'd be the only reason Bing is still used
+#emacs :--: twb :--: bpalmer: why not terrapin
+##javascript :--: tcsc :--: yahoo is the default search engine for firefox but same thing
+##javascript :--: jaziz :--: Yep, same thing
+#haskell :--: nitrix :--: hjulle: Thanks for the corrections. It is way past bedtime here :P
+##javascript :--: jaziz :--: Do they have like developers on salary, though?
+#emacs :--: twb :--: then you could be like baba yaga
+#haskell :--: nitrix :--: 'night.
+##javascript :--: tcsc :--: mozilla? yes, over a thousand of them
+#emacs :--: e1f_ :--: 'And experts say a lack of controls on cash real-estate deals has made Miami a magnet for questionable currency.'
+##javascript :--: jaziz :--: Ah
+##javascript :--: tcsc :--: or, idk how many are developers vs other employees
+#emacs :--: twb :--: All of florida is a write-off
+#emacs :--: bpalmer :--: I fear a terrapin with chicken legs would be quite disturbing.
+##javascript :--: systemfault :--: Isn't Yahoo... Bing as far as search engine goes?
+##javascript :--: jaziz :--: For some reason, I thought it was just some giant charity project where a bunch of people decided to create something cool haha
+#haskell :--: hjulle :--: Well, it's way past bedtime for me too. Or rather, it's almost morning here.
+#emacs :--: twb :--: I hear that florida is basically just full of gun-crazy reactionary old people who shoot hookers on their front lawn
+#emacs :--: mrm :--: Hey!
+##javascript :--: tcsc :--: jaziz: it's weird. there's a non profit that owns a for profit company and the for profit company gives most of the money back to the non profit
+#emacs :--: mrm :--: There's also Disneyland.
+#emacs :--: e1f_ :--: The costal regions will be flooded in 20-50 years. 
+#emacs :--: twb :--: pretty sure walt disney qualifies
+#emacs :--: bpalmer :--: Disneyworld.
+#emacs :--: bpalmer :--: Disneyland is safely stored in California.
+#emacs :--: mrm :--: Right, one of those things.
+#emacs :--: bpalmer :--: (where nothing scandalous happens)
+#emacs :--: twb :--: "Are all the jews dead yet?" "No" "Freeze me for another 100 years!"
+##javascript :--: tcsc :--: but any open souce that is, well, a large enough deal definitely has salaried developers.
+#emacs :--: netkam2 :--: osx rice
+##javascript :--: jinmugenfu :--: yes
+#emacs :--: riceandbeans :--: offby1: where did you immigrate from?
+#emacs :--: twb :--: riceandbeans: philis, obviously
+#Node.js :--: FuzzySockets :--: What is the best way to sanitize user submitted request data in node.js?
+#emacs :--: twb :--: "the land of the Philistines as a pentapolis in southwestern Levant comprising the five city-states of Gaza, Ashkelon, Ashdod, Ekron, and Gath, from Wadi Gaza in the south to the Yarqon River in the north."
+#emacs :--: twb :--: Incidentally I've been reading about dhimmis in al-Andalus and even if you paid your jizya, it seems like if the caliph at the time was an asshole, you still had a shitty time.
